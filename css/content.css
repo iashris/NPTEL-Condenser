@@ -1,0 +1,42 @@
+#qr-wrapper{
+    position:fixed;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    background: rgba(0,0,0,0.85);
+    display: none;
+    opacity: 0;
+    transition: opacity 0.2s linear 0s;
+    z-index: 99999999999;
+}
+
+#qr-inner-wrapper{
+    width:100vmin;
+    height:100vmin;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate3d(-50%, -50%, 0) scale(0.5, 0.5);
+    background: white;
+    border-radius: 4%;
+    box-shadow: 0px 0px 60px white;
+}
+
+#qr-wrapper canvas{
+    width:100% !important;
+    height:100% !important;
+}
+
+#qr-popup{
+    display: inline-block;
+    padding: 15px 18px;
+    border-radius: 15px;
+    background: #f4f3bd;
+    font-size: 16px;
+    position: relative;
+    top: 12.5vh;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    visibility: hidden;
+}

@@ -1,0 +1,62 @@
+body{
+    margin: 5px 0;
+}
+
+[type="radio"]{
+    display: none;
+}
+
+[type="checkbox"]{
+    display: none;
+}
+[type="checkbox"]+label{
+    background:#440000;
+	color:white;
+}
+[type="checkbox"]:checked+label{
+    background:#93ff93;
+	color:black;
+}
+[type="radio"]:checked + label{
+    background: #cc181e;
+    color:white;
+}
+
+
+.menu{
+    width:auto;
+    height:auto;
+    list-style: none;
+    margin:0;
+    padding:0;
+    -webkit-user-select: none;
+}
+
+.menu li{
+    padding:0;
+    font-size: 16px;
+    /*width:140px;*/
+}
+
+.menu li:hover{
+    background: #444;
+    color:white;
+}
+
+.menu li:active{
+    background: #222;
+    color:white;
+}
+
+.menu label{
+    display:block;
+    width:100%;
+    /*text-align: center;*/
+    padding:5px 0 5px 10px;
+    cursor: pointer;
+    min-width: 295px;
+}
+
+.option{
+    padding-bottom:10px;
+}
